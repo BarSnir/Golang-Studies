@@ -7,3 +7,10 @@ First Course: Learn How To Code: Google's Go (golang) Programming Language
     links: https://www.udemy.com/course/learn-how-to-code/  
     resources: https://docs.google.com/document/d/1ckYpi6hcRkaBUEk975f54oGsHYHu7GhzOk7-nOrkNxo/edit  
     playground: https://play.golang.org/  
+
+
+# Install Golang:
+1. Download proper install version from here: https://golang.org/dl/ .
+2. Install it.
+3. Type `go env` or `go help` to verify Golang env is installed in your machine.
+4. Check for proper Golang version by command: `go version`.
