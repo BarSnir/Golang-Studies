@@ -14,3 +14,7 @@ First Course: Learn How To Code: Google's Go (golang) Programming Language
 2. Install it.
 3. Type `go env` or `go help` to verify Golang env is installed in your machine.
 4. Check for proper Golang version by command: `go version`.
+
+# Set Go env
+export GOROOT=/Users/<user>/Documents/gowrokspace   
+export PATH=$PATH:$GOROOT/bin  
