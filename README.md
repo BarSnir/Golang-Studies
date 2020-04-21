@@ -16,5 +16,16 @@ First Course: Learn How To Code: Google's Go (golang) Programming Language
 4. Check for proper Golang version by command: `go version`.
 
 # Set Go env
-export GOROOT=/Users/<user>/Documents/gowrokspace   
-export PATH=$PATH:$GOROOT/bin  
+export GOROOT=/Users/<user>/Documents/gowrokspace  
+(go workspace should include three directories: `bin`, `pkg` & `src` ).   
+export PATH=$PATH:$GOROOT/bin   
+export GOBIN=/Users/bars/Documents/gowrokspace/bin   
+
+# Run scripts
+`go run` <GoFile>.go 
+
+# Commands
+`go fmt` - format code.  
+`go fmt ./...` - format all files.
+`go build Hello.go ` - test & make an executable file. 
+`go install Hello.go` - make an executable file.
