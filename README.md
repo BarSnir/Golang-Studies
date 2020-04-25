@@ -26,6 +26,13 @@ export GOBIN=/Users/bars/Documents/gowrokspace/bin
 
 # Commands
 `go fmt` - format code.  
-`go fmt ./...` - format all files.
-`go build Hello.go ` - test & make an executable file. 
-`go install Hello.go` - make an executable file.
+`go fmt ./...` - format all files.  
+`go build Hello.go ` - test & make an executable file.   
+`go install Hello.go` - make an executable file.  
+`go get <repo>` - get github repo.
+`go test` - tst go files.  
+
+# Working with Go modules
+`go mod init` - init Go module.  
+`go list -m all` - all the decencies.  
+`go list -m -versions <package-name>` - get all specified package versions. 
