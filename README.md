@@ -34,5 +34,5 @@ export GOBIN=/Users/bars/Documents/gowrokspace/bin
 
 # Working with Go modules
 `go mod init` - init Go module.  
-`go list -m all` - all the decencies.  
+`go list -m all` - all the dependencies.  
 `go list -m -versions <package-name>` - get all specified package versions. 
