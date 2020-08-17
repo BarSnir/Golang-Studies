@@ -15,6 +15,9 @@ First Course: Learn How To Code: Google's Go (golang) Programming Language
 3. Type `go env` or `go help` to verify Golang env is installed in your machine.
 4. Check for proper Golang version by command: `go version`.
 
+# Recommendation
+1. If you with mac, just `brew install go`, it's much easier.
+
 # Set Go env
 export GOROOT=/Users/<user>/Documents/gowrokspace  
 (go workspace should include three directories: `bin`, `pkg` & `src` ).   
