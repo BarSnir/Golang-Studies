@@ -2,28 +2,19 @@ package main
 
 import (
 	"fmt"
-	"runtime"
-	"sync"
 )
 
 func main() {
 
-	var wg sync.WaitGroup
 	c := make(chan int)
 
 	go func() {
 		for i := 0; i < 10; i++ {
-			wg.Add(1)
-			go func(m int) {
-				for i := 0; i < 10; i++ {
 
-					runtime.Gosched()
-					c <- i*10 + m
-				}
-				wg.Done()
-			}(i)
+			for j := i * 10; j < (i*10)+10; j++ {
+				c <- j
+			}
 		}
-		wg.Wait()
 		close(c)
 	}()
 
