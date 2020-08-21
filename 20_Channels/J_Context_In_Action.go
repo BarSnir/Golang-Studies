@@ -30,7 +30,7 @@ func main() {
 
 	time.Sleep(time.Second * 3)
 	fmt.Println("error check 2:", ctx.Err())
-	fmt.Println("num gortins 2:", runtime.NumGoroutine())
+	fmt.Println("num goroutine 2:", runtime.NumGoroutine())
 
 	fmt.Println("about to cancel context")
 	cancel()
@@ -38,5 +38,5 @@ func main() {
 
 	time.Sleep(time.Second * 2)
 	fmt.Println("error check 3:", ctx.Err())
-	fmt.Println("num gortins 3:", runtime.NumGoroutine())
+	fmt.Println("num goroutine 3:", runtime.NumGoroutine())
 }
