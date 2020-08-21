@@ -2,23 +2,29 @@ package main
 
 import (
 	"fmt"
+	"sync"
 )
 
 func main() {
-
-	c := make(chan int)
-
-	go func() {
-		for i := 0; i < 10; i++ {
-
-			for j := i * 10; j < (i*10)+10; j++ {
-				c <- j
+	var wg sync.WaitGroup
+	ch := make(chan int)
+	routines := 10
+	for i := 0; i < routines; i++ {
+		wg.Add(1)
+		go func(i int) {
+			for j := i * routines; j < (i*routines)+routines; j++ {
+				ch <- j
 			}
-		}
-		close(c)
-	}()
-
-	for v := range c {
-		fmt.Println(v)
+			wg.Done()
+		}(i)
 	}
+
+	for j := 0; j < routines*routines; j++ {
+		fmt.Println(<-ch)
+	}
+
+	// for v := range ch {
+	// 	fmt.Println(v)
+	// }
+	wg.Wait()
 }
