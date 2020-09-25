@@ -40,6 +40,8 @@ export GOBIN=/Users/bars/Documents/gowrokspace/bin
 `go tool cover -func=c.out` - generate output from c.out
 `go test -bench .` - get the benchmark of your module.
 
+# Please always BET (Benchmark, Example, Test)
+
 # Working with Go modules
 `go mod init` - init Go module.  
 `go list -m all` - all the dependencies.  
