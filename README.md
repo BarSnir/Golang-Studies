@@ -33,7 +33,12 @@ export GOBIN=/Users/bars/Documents/gowrokspace/bin
 `go build Hello.go ` - test & make an executable file.   
 `go install Hello.go` - make an executable file.  
 `go get <repo>` - get github repo.
-`go test` - tst go files.  
+`go test` - test go files.
+`go test -cover` - test coverage.
+`go test -coverprofile c.out ` - export test profiler
+`go tool cover -html=c.out` - generate html from c.out
+`go tool cover -func=c.out` - generate output from c.out
+`go test -bench .` - get the benchmark of your module.
 
 # Working with Go modules
 `go mod init` - init Go module.  
